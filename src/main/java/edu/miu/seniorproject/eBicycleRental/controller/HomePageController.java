@@ -2,9 +2,17 @@ package edu.miu.seniorproject.eBicycleRental.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomePageController {
+
+    @GetMapping("/test")
+    @ResponseBody
+    public String testPage(){
+        return "Welcome to ebicycle rental website";
+    }
+
     @GetMapping(value = {"/","/ebicyclerental","/public/home","ebicyclerental/public/home"})
     public String home0() {
         return "public/home/index";

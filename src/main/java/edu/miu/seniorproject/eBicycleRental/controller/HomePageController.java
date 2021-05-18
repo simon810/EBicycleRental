@@ -10,7 +10,7 @@ public class HomePageController {
     @GetMapping("/test")
     @ResponseBody
     public String testPage(){
-        return "Welcome to ebicycle rental website";
+        return "Welcome to ebicycle rental website!";
     }
 
     @GetMapping(value = {"/","/ebicyclerental","/public/home","ebicyclerental/public/home"})

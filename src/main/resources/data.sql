@@ -28,7 +28,7 @@ INSERT INTO  credentials (credential_id, password, user_name) VALUES (2, '$2y$10
 INSERT INTO  credentials (credential_id, password, user_name) VALUES (3, '$2y$10$.MU0VSB8Z.Qmgg2bz6pZLO4cwjAF/iKTH7QjWEaayV0YztsRYgcha', 'customer');
 
 
-INSERT INTO  user (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (1, '1994-09-09', 'Essey', 'Tezare', '98765432', 'Abraham',1);
+-- INSERT INTO  user (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (1, '1994-09-09', 'Essey', 'Tezare', '98765432', 'Abraham',1);
 INSERT INTO  user (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (2, '1993-09-09', 'Dawit', 'Hailu', '98756765', 'Tesfahannes',2);
 INSERT INTO  user (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (3, '1993-01-09', 'Biniam', 'Arefaine', '98765376', 'Tsehaye',3);
 

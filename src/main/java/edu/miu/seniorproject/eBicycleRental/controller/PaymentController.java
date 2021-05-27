@@ -95,6 +95,7 @@ public class PaymentController {
         payment.setPaymentDate(booking.getBookingDate());
         payment.setTotalPrice(booking.getTotalPrice());
         payment.setBooking(booking);
+        System.out.println("payment++++");
         paymentService.save(payment);
 
         return "secured/customer/customers/paymentconfirmation";

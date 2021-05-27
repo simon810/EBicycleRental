@@ -30,6 +30,7 @@
                 <span sec:authorize="isAnonymous()" style="color:#fff;padding-left: 2em; padding-right: 1em;">Welcome, Guest</span>
                 <span sec:authorize="isAuthenticated()" style="color:#fff;padding-left: 0em; padding-right: 0.5em;">Welcome, </span><span sec:authorize="isAuthenticated()" style="color:#fff;padding-left: 0em; padding-right: 0.5em;" sec:authentication="principal.username"></span>
                 <a sec:authorize="isAnonymous()" href="/ebicyclerental/public/home/login" class="btn btn-secondary">Sign In</a>
+                <a sec:authorize="isAnonymous()" href="/ebicyclerental/user/users/register" class="nav-link">Sign Up</a>
                 <a sec:authorize="isAuthenticated()" href="/ebicyclerental/public/home/logout" class="btn btn-secondary">Sign Out</a>
             </form>
         </div>

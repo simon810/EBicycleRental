@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import edu.miu.seniorproject.eBicycleRental.model.Credential;
 import edu.miu.seniorproject.eBicycleRental.model.User;
 import edu.miu.seniorproject.eBicycleRental.service.UserService;
 
@@ -58,5 +59,35 @@ public class UserController {
     public String deleteUser(@PathVariable("userId") Long id, Model model){
         userService.delete(id);
         return "redirect:/ebicyclerental/user/users";
+    }
+
+
+    @GetMapping("/ebicyclerental/user/users/register")
+    public String showRegistrationForm(Model model) {
+        User user = new User();
+        user.setCredential(new Credential());
+
+        model.addAttribute("user", user);
+
+        return "public/home/signup_form";
+    }
+
+    @PostMapping("/ebicyclerental/user/users/process_register")
+    public String processRegister(@Valid @ModelAttribute("user") User user,  BindingResult bindingResult, Model model) {
+
+        if (bindingResult.hasErrors()) {
+
+            model.addAttribute("errors", bindingResult.getAllErrors());
+            return "/ebicyclerental/user/users/register";
+        }
+        try{
+            userService.save(user);
+        }catch (Exception e){
+            model.addAttribute("error", bindingResult.getAllErrors());
+            model.addAttribute("user", user);
+
+            return "public/home/signup_form";
+        }
+        return "redirect:/ebicyclerental/public/home/login";
     }
 }

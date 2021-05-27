@@ -55,9 +55,10 @@ public class User {
 
 	}
 
-	public User(Long userId, String firstName, String lastName, LocalDate dateOfBirth, String licenseNumber) {
+	public User(Long userId, String firstName, String middleName,String lastName, LocalDate dateOfBirth, String licenseNumber) {
 		this.userId = userId;
 		this.firstName = firstName;
+		this.middleName=middleName;
 		this.lastName = lastName;
 		this.dateOfBirth = dateOfBirth;
 		this.licenseNumber = licenseNumber;
@@ -79,6 +80,14 @@ public class User {
 
 	public Long getUserId() {
 		return userId;
+	}
+
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
 	}
 
 	public void setUserId(Long userId) {
@@ -147,6 +156,7 @@ public class User {
 				"userId=" + userId +
 				", firstName='" + firstName + '\'' +
 				", lastName='" + lastName + '\'' +
+				", middleName='" + middleName + '\'' +
 				", dateOfBirth=" + dateOfBirth +
 				", licenseNumber=" + licenseNumber +
 				", credential=" + credential +

@@ -34,11 +34,11 @@ INSERT INTO  users (user_id, date_of_birth, first_name, last_name, license_numbe
 
 -- INSERT INTO  bookings (booking_id, booking_date, date_of_birth, email, end_date, first_name, last_name, license_number, reference_number, start_date, total_price, payment_id, user_id, vehicle_id) VALUES ('1', '2009-09-09', '1993-09-11', 'binireyes@gmail.com', '2009-09-12', 'Biniam', 'Arefaine', '123456789', '100', '2009-09-09', '320.00', '1', '1', '1');
 
-INSERT INTO role(role_id, role_name) VALUES (1, 'ROLE_ADMIN');
-INSERT INTO role(role_id, role_name) VALUES (2, 'ROLE_STAFF');
-INSERT INTO role(role_id, role_name) VALUES (3, 'ROLE_CUSTOMER');
+INSERT INTO role(role_id, role_name) VALUES (10, 'ROLE_ADMIN');
+INSERT INTO role(role_id, role_name) VALUES (20, 'ROLE_STAFF');
+INSERT INTO role(role_id, role_name) VALUES (30, 'ROLE_CUSTOMER');
 
-INSERT INTO user_roles (user_id, role_id) VALUES (10, 1);
-INSERT INTO user_roles (user_id, role_id) VALUES (20, 2);
-INSERT INTO user_roles (user_id, role_id) VALUES (30, 3);
+INSERT INTO user_roles (user_id, role_id) VALUES (10, 10);
+INSERT INTO user_roles (user_id, role_id) VALUES (20, 20);
+INSERT INTO user_roles (user_id, role_id) VALUES (30, 30);
 

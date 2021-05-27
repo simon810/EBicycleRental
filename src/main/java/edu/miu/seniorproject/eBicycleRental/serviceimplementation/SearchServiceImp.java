@@ -42,7 +42,7 @@ public class SearchServiceImp implements SearchService {
 	public List<Category> findAvailableCategories(LocalDate start, LocalDate end) {
 		return getAvailableVehicles(start, end).stream()
 											   .map(v -> v.getCategory())
-//											   .distinct()
+											   .distinct()
 											   .collect(Collectors.toList());
 	}
 

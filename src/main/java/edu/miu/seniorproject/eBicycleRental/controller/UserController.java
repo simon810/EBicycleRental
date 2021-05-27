@@ -78,7 +78,7 @@ public class UserController {
         if (bindingResult.hasErrors()) {
 
             model.addAttribute("errors", bindingResult.getAllErrors());
-            return "/ebicyclerental/user/users/register";
+            return "redirect:/ebicyclerental/user/users/register";
         }
         try{
             userService.save(user);

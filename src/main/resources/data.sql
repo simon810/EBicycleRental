@@ -25,7 +25,7 @@ INSERT INTO  vehicles (vehicle_id, make, model, plate_number, vehicle_number, ye
 
 INSERT INTO  credentials (credential_id, password, user_name) VALUES (1, '$2y$10$.MU0VSB8Z.Qmgg2bz6pZLO4cwjAF/iKTH7QjWEaayV0YztsRYgcha', 'admin');
 INSERT INTO  credentials (credential_id, password, user_name) VALUES (2, '$2y$10$.MU0VSB8Z.Qmgg2bz6pZLO4cwjAF/iKTH7QjWEaayV0YztsRYgcha', 'staff');
-INSERT INTO  credentials (credential_id, password, user_name) VALUES (3, '$2y$10$.MU0VSB8Z.Qmgg2bz6pZLO4cwjAF/iKTH7QjWEaayV0YztsRYgcha', 'customer');
+-- INSERT INTO  credentials (credential_id, password, user_name) VALUES (3, '$2y$10$.MU0VSB8Z.Qmgg2bz6pZLO4cwjAF/iKTH7QjWEaayV0YztsRYgcha', 'customer');
 
 
 INSERT INTO  users (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (1, '1994-09-09', 'Essey', 'Tezare', '98765432', 'Abraham',1);
@@ -36,9 +36,9 @@ INSERT INTO  users (user_id, date_of_birth, first_name, last_name, license_numbe
 
 INSERT INTO role(role_id, role_name) VALUES (1, 'ROLE_ADMIN');
 INSERT INTO role(role_id, role_name) VALUES (2, 'ROLE_STAFF');
-INSERT INTO role(role_id, role_name) VALUES (3, 'ROLE_CUSTOMER');
+-- INSERT INTO role(role_id, role_name) VALUES (3, 'ROLE_CUSTOMER');
 
 INSERT INTO user_roles (user_id, role_id) VALUES (1, 1);
 INSERT INTO user_roles (user_id, role_id) VALUES (2, 2);
-INSERT INTO user_roles (user_id, role_id) VALUES (3, 3);
+-- INSERT INTO user_roles (user_id, role_id) VALUES (3, 3);
 

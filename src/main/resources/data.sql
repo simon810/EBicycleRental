@@ -30,7 +30,7 @@ INSERT INTO  credentials (credential_id, password, user_name) VALUES (3, '$2y$10
 
 INSERT INTO  users (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (1, '1994-09-09', 'Essey', 'Tezare', '98765432', 'Abraham',1);
 INSERT INTO  users (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (2, '1993-09-09', 'Dawit', 'Hailu', '98756765', 'Tesfahannes',2);
-INSERT INTO  users (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (3, '1993-01-09', 'Biniam', 'Arefaine', '98765376', 'Tsehaye',3);
+-- INSERT INTO  users (user_id, date_of_birth, first_name, last_name, license_number, middle_name, credential_id) VALUES (3, '1993-01-09', 'Biniam', 'Arefaine', '98765376', 'Tsehaye',3);
 
 -- INSERT INTO  bookings (booking_id, booking_date, date_of_birth, email, end_date, first_name, last_name, license_number, reference_number, start_date, total_price, payment_id, user_id, vehicle_id) VALUES ('1', '2009-09-09', '1993-09-11', 'binireyes@gmail.com', '2009-09-12', 'Biniam', 'Arefaine', '123456789', '100', '2009-09-09', '320.00', '1', '1', '1');
 

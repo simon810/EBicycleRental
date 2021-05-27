@@ -73,6 +73,7 @@ public class PaymentController {
         if(bindingResult.hasErrors()) {
             model.addAttribute("payment", payment);
             model.addAttribute("errors", bindingResult.getAllErrors());
+            System.out.println("error inside payment++++");
             return "secured/customer/customers/paymentform";
         }
         if(payment.getBillingAddress().getStreet().trim().isEmpty()
@@ -87,6 +88,7 @@ public class PaymentController {
         Credential credential=credentialService.findByUserName(auth.getName());
         User user=userService.findByCredential(credential);
 
+        System.out.println("address++++");
         addressService.save(payment.getBillingAddress());
 
         booking.setUser(user);

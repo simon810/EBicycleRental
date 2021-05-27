@@ -70,6 +70,7 @@ public class PaymentController {
     @PostMapping(value = "/ebicyclerental/cutomer/payments/add/save")
     @DateTimeFormat(pattern="yyyy-MM-dd")
     public String addNewPayment(@Valid @ModelAttribute("payment") Payment payment, @RequestParam Long bookingId, BindingResult bindingResult, Model model) {
+        System.out.println("entyry++");
         if(bindingResult.hasErrors()) {
             model.addAttribute("payment", payment);
             model.addAttribute("errors", bindingResult.getAllErrors());

@@ -31,7 +31,7 @@ public class Payment {
     private Double totalPrice;
 
 
-    @OneToOne(mappedBy = "payment", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "payment", fetch = FetchType.EAGER)
     private Booking booking;
 
     @OneToOne

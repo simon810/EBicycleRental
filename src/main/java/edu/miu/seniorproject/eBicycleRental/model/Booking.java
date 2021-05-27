@@ -70,7 +70,7 @@ public class Booking {
     @JoinColumn(name = "user_id", nullable = true)
     private User user;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "payment_id", nullable = true, unique = true)
     private Payment payment;
 

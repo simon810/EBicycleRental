@@ -38,7 +38,7 @@ public class Vehicle {
 //	@NotBlank(message = "Please select category")
 	private Category category;
 	
-	@OneToMany(mappedBy = "vehicle", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "vehicle")
 	private List<Booking> bookings;
     
 	public Vehicle() {}

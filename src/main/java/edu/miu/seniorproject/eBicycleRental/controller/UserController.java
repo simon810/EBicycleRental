@@ -85,6 +85,7 @@ public class UserController {
         }catch (Exception e){
             model.addAttribute("error", bindingResult.getAllErrors());
             model.addAttribute("user", user);
+            System.out.println("error++"+e.getMessage());
 
             return "public/home/signup_form";
         }

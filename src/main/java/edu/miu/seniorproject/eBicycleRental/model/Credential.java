@@ -13,7 +13,7 @@ import javax.validation.constraints.NotBlank;
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long credentialId;
 
-        @Column(name = "user_name",nullable=false)
+        @Column(name = "user_name",nullable=false, unique = true)
         @NotBlank(message = "Please provide user name")
         private String userName;
 

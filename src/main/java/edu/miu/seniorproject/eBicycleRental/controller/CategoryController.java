@@ -35,7 +35,7 @@ public class CategoryController {
     @GetMapping(value = "/ebicyclerental/admin/categories/add")
     public String newCategoryForm(Model model) {
 
-        List<VehicleType> vehicleTypes= Arrays.asList(VehicleType.MOUNTAIN,VehicleType.TANDEM,VehicleType.SPORT,VehicleType.CITY,VehicleType.RURAL,VehicleType.BEACH);
+        List<VehicleType> vehicleTypes= Arrays.asList(VehicleType.MOUNTAIN1);
         model.addAttribute("category", new Category());
         model.addAttribute("vehicleTypes",vehicleTypes);
         return "secured/admin/categories/newcategoryform";

@@ -15,13 +15,13 @@ public class HomePageController {
 
     @GetMapping(value = {"/","/ebicyclerental","/public/home","ebicyclerental/public/home"})
     public String home0() {
-        return "public/home/index";
+        return "public/home/homeindex";
     }
 
-//    @GetMapping(value = {"/public/home","/ebicyclerental/public/home"})
-//    public String home1() {
-//        return "public/home/index";
-//    }
+    @GetMapping(value = {"/ebicyclerental/public/customerhome"})
+    public String home1() {
+        return "public/home/index";
+    }
 
     @GetMapping(value = {"/secured/service","/ebicyclerental/secured/service"})
     public String service() {

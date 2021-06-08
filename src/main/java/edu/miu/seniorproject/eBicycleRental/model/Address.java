@@ -14,8 +14,8 @@ public class Address {
     private Long addressId;
 
 
-    @Column(name = "street", nullable=false)
-    @NotBlank(message = "Please provide street number!")
+    //@Column(name = "street", nullable=false)
+   // @NotBlank(message = "Please provide street number!")
     private String street;
 
     @Column(name = "city",nullable=false)

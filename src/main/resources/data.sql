@@ -3,9 +3,9 @@ INSERT INTO addresses (address_id, city, country, state, street, zip_code) VALUE
 INSERT INTO addresses (address_id, city, country, state, street, zip_code) VALUES (2, 'fairfield', 'USA', 'IA', '2000 N court', 52556);
 -- INSERT INTO  payments (payment_id, card_cvv, card_number, payment_date, payment_type, total_price, address_id) VALUES (1, 698, 3434545445, '2020-04-03', 'credit card', 40.0, 1);
 
-INSERT INTO  catagories(category_id,  vehicle_type, rate_per_day) VALUES (1,  'MOUNTAIN1', 5.0);
-INSERT INTO  catagories (category_id, vehicle_type, rate_per_day) VALUES (2,  'MOUNTAIN2', 3.0);
-INSERT INTO  catagories(category_id, vehicle_type, rate_per_day) VALUES (3,  'MOUNTAIN3', 4.0);
+INSERT INTO  catagories(category_id,  vehicle_type, rate_per_day) VALUES (1,  'MOUNTAIN1', 5.00);
+INSERT INTO  catagories (category_id, vehicle_type, rate_per_day) VALUES (2,  'MOUNTAIN2', 3.00);
+INSERT INTO  catagories(category_id, vehicle_type, rate_per_day) VALUES (3,  'MOUNTAIN3', 4.00);
 -- INSERT INTO  catagories (category_id,  vehicle_type, rate_per_day) VALUES (4,  'MOUNTAIN4', 3.0);
 -- INSERT INTO  catagories(category_id,  vehicle_type, rate_per_day) VALUES (5,  'MOUNTAIN5', 6.0);
 -- INSERT INTO  catagories (category_id,  vehicle_type, rate_per_day) VALUES (6,  'MOUNTAIN6', 2.0);

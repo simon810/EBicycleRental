@@ -5,23 +5,46 @@
       data-layout-decorator="~{layout/masterlayout}">
 <head>
     <title>The ebicycle Rental System  </title>
+    <style>
+        img {
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+
+        .josidmu {
+            height: 540px;
+            width: 100%;
+            position: fixed;
+        }
+        p {
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <div layout:fragment="content" style="padding-top:1em;" class="container">
         <h3>Welcome to the Miu Bicycle Rental System<sup>&reg;</sup></h3>
         <hr/>
-        <div style="font-size: 1em">
-            <img th:src="@{/images/banner1.png}" class="float-left" style="padding:10px;" /><br/><br/>
-            <p>We are a top-flight, fully-digitized bicycle Rental.
-                Find out more <a href="/ebicyclerental/public/home/about">about us</a> and
-                and learn how we can serve you with a widest variety of bicycles, all for your satisfaction as well as your entertainment.
-                You can also take a virtual tour</a>,
-                of our world-class facilities and be amazed at all what we have in stock
-                for you, your family and friends.</p>
+      <div class="josidmu">
+            <img th:src="@{/images/josidmu.png}" class="float-left" style="padding:10px;" /><br/><br/>
+           <p> We are a Miu bicycle Rental To book click services
+               <p>
+              To find out more visit <a href="/ebicyclerental/public/home/about">about us</a>
+      </p>
+               <p>
+           We are more than happy to serve you with the bicycles we have.
+          </p>
+          <p>
+             Our aim is to serve MIU community by offering rental bicycle
+                <!--You can also take a virtual tour-->
+             <!--   of our world-class facilities and be amazed at all what we have in stock
+                for you, your family and friends-->.
+      </p>
+          </p>
+          </p>
 
-            <p>
-            <p sec:authorize="isAnonymous()">Already have access as a Member, ebicyclerental User or System Administrator? Then, simply <a href="/ebicyclerental/public/home/login">Sign-In.</a>
-                to access the full range of services available to you, based on your role and access rights.</p>
+
         </div>
     </div>
 
